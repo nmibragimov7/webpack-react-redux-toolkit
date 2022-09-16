@@ -4,9 +4,10 @@ import webpack from "webpack";
 import {plugins} from "./plugins";
 import {loaders} from "./loaders";
 import {resolvers} from "./resolvers";
+import {server} from "./server";
 
 export function webpackConfig(options: Options): webpack.Configuration {
-    const {paths, mode} = options;
+    const {paths, mode, isDev} = options;
 
     return {
         mode,
@@ -21,5 +22,7 @@ export function webpackConfig(options: Options): webpack.Configuration {
             rules: loaders(),
         },
         resolve: resolvers(),
+        devtool: isDev ? 'inline-source-map' : undefined,
+        devServer: isDev ? server(options) : undefined
     }
 }

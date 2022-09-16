@@ -6,10 +6,14 @@ export interface Path {
     html: string
 }
 
-
+export interface Env {
+    mode: Mode
+    port: number
+}
 
 export interface Options {
     mode: Mode
     paths: Path
     isDev: boolean
+    port: number
 }
