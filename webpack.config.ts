@@ -2,11 +2,11 @@ import webpack from 'webpack';
 import path from "path";
 
 import {webpackConfig} from "./config/build/webpackConfig";
-import {Env, Path} from "./config/build/types/config";
+import {IEnv, Path} from "./config/build/types/config";
 
-export default (env: Env) => {
+export default (env: IEnv) => {
     const paths: Path = {
-        entry: path.resolve(__dirname, 'src', 'index.ts'),
+        entry: path.resolve(__dirname, 'src', 'index.tsx'),
         build: path.resolve(__dirname, 'build'),
         html: path.resolve(__dirname, 'public', 'index.html')
     }

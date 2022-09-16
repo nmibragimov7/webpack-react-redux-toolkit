@@ -6,7 +6,7 @@ export interface Path {
     html: string
 }
 
-export interface Env {
+export interface IEnv {
     mode: Mode
     port: number
 }
