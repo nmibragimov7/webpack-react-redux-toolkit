@@ -2,7 +2,7 @@ export type Mode = 'production' | 'development'
 
 export interface Path {
     entry: string
-    build: string
+    dist: string
     html: string,
     src: string
 }
