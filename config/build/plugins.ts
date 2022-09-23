@@ -1,12 +1,12 @@
 import HTMLWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 
 import webpack from "webpack";
 import {Options} from "./types/config";
 
 export function plugins({paths, isDev}: Options): webpack.WebpackPluginInstance[] {
-
-    return [
+    const plugins = [
         new HTMLWebpackPlugin({
             template: paths.html
         }),
@@ -19,4 +19,9 @@ export function plugins({paths, isDev}: Options): webpack.WebpackPluginInstance[
             __IS_DEV__: JSON.stringify(isDev),
         })
     ]
+    if(isDev) {
+        // plugins.push(new webpack.HotModuleReplacementPlugin())
+        plugins.push(new ReactRefreshWebpackPlugin())
+    }
+    return plugins
 }
