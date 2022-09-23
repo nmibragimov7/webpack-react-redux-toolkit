@@ -1,7 +1,7 @@
 import React, {ButtonHTMLAttributes, FC} from 'react';
 
-import styles from "./Button.module.scss";
 import {classNames} from "shared/lib/classNames/classNames";
+import styles from "./Button.module.scss";
 
 export enum ThemeButton {
     CLEAR = "clear"
