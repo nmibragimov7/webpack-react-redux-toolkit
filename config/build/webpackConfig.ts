@@ -1,21 +1,21 @@
-import {Options} from "./types/config";
-import webpack from "webpack";
+import webpack from 'webpack';
+import { Options } from './types/config';
 
-import {plugins} from "./plugins";
-import {loaders} from "./loaders";
-import {resolvers} from "./resolvers";
-import {server} from "./server";
+import { plugins } from './plugins';
+import { loaders } from './loaders';
+import { resolvers } from './resolvers';
+import { server } from './server';
 
 export function webpackConfig(options: Options): webpack.Configuration {
-    const {paths, mode, isDev} = options;
+    const { paths, mode, isDev } = options;
 
     return {
         mode,
         entry: paths.entry,
         output: {
-            filename: "[name].[contenthash].js",
+            filename: '[name].[contenthash].js',
             path: paths.dist,
-            clean: true
+            clean: true,
         },
         plugins: plugins(options),
         module: {
@@ -23,6 +23,6 @@ export function webpackConfig(options: Options): webpack.Configuration {
         },
         resolve: resolvers(options),
         devtool: isDev ? 'inline-source-map' : undefined,
-        devServer: isDev ? server(options) : undefined
-    }
+        devServer: isDev ? server(options) : undefined,
+    };
 }

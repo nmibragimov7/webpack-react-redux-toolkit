@@ -27,6 +27,7 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'warn',
         'no-shadow': 'off',
+        'no-underscore-dangle': 'off',
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
         'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
@@ -34,5 +35,8 @@ module.exports = {
         'react/require-default-props': 'off',
         'react/jsx-props-no-spreading': 'warn',
         'react/function-component-definition': 'off',
+    },
+    globals: {
+        __IS_DEV__: true,
     },
 };
