@@ -20,7 +20,6 @@ const LangSwitcher = ({ className }: LangSwitcherProps) => {
             className={classNames('', {}, [className])}
             onClick={toggle}
         >
-            hello
             {t('language')}
         </Button>
     );
