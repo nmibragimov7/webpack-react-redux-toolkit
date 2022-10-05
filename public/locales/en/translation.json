@@ -2,5 +2,7 @@
   "language": "English",
   "title": "Main page",
   "test": "test",
-  "not-found": "Page not found"
+  "not-found": "Page not found",
+  "error-page": "An unexpected error has occurred",
+  "update-page": "Update page"
 }

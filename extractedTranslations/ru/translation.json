@@ -1,5 +1,8 @@
 {
+  "erro": "erro",
+  "error-page": "error-page",
   "language": "Русский",
   "not-found": "not-found",
-  "title": "Заголовок"
+  "title": "Заголовок",
+  "update-page": "update-page"
 }

@@ -9,6 +9,11 @@ import './styles/index.scss';
 
 const App = () => {
     const { theme } = useTheme();
+    // useEffect(() => {
+    //     if (Math.random() < 0.5) {
+    //         throw new Error(); // выкидвает ошибку что проект сломался
+    //     }
+    // }, []);
 
     return (
         <div className={classNames('app', {}, [theme])}>
