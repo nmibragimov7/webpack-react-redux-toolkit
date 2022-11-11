@@ -11,7 +11,7 @@ const App = () => {
     const { theme } = useTheme();
     // useEffect(() => {
     //     if (Math.random() < 0.5) {
-    //         throw new Error(); // выкидвает ошибку что проект сломался
+    //         throw new Error(); // выкидывает ошибку что проект сломался
     //     }
     // }, []);
 
