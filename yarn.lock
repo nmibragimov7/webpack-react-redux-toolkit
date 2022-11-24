@@ -11163,7 +11163,7 @@
   "resolved" "https://registry.npmjs.org/postcss-safe-parser/-/postcss-safe-parser-6.0.0.tgz"
   "version" "6.0.0"
 
-"postcss-scss@^4.0.2":
+"postcss-scss@^4.0.2", "postcss-scss@^4.0.5":
   "integrity" "sha512-F7xpB6TrXyqUh3GKdyB4Gkp3QL3DDW1+uI+gxx/oJnUt/qXI4trj5OGlp9rOKdoABGULuqtqeG+3HEVQk4DjmA=="
   "resolved" "https://registry.npmjs.org/postcss-scss/-/postcss-scss-4.0.5.tgz"
   "version" "4.0.5"
