@@ -20,11 +20,17 @@ export const Navbar = ({ className }: NavbarProps) => {
     return (
         <div className={classNames(styles.Navbar, {}, [className])}>
             <div className={styles.links}>
-                <Button onClick={onToggle} theme={ThemeButton.CLEAR_INVERTED} className={styles.mainLink}>
+                <Button
+                    onClick={onToggle}
+                    theme={ThemeButton.CLEAR_INVERTED}
+                    className={styles.mainLink}
+                >
                     Войти
                 </Button>
                 <Modal isOpen={isOpen} onClose={onToggle}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cupiditate, dolorem eaque exercitationem laborum neque quaerat quibusdam quis reiciendis reprehenderit!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Adipisci cupiditate, dolorem eaque exercitationem laborum
+                    neque quaerat quibusdam quis reiciendis reprehenderit!
                 </Modal>
             </div>
         </div>
