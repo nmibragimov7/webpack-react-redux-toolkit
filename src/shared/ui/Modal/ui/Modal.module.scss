@@ -1,12 +1,5 @@
 .Modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0;
-  pointer-events: none;
+  @apply fixed top-0 right-0 bottom-0 left-0 opacity-0 pointer-events-none;
   color: var(--primary-color);
   &.dark {
     --bg-color: #090949;
@@ -15,35 +8,28 @@
 }
 
 .overlay {
-  width: 100%;
-  height: 100%;
   background: var(--overlay-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @apply flex justify-center items-center w-full h-full;
 }
 
 .content {
-  padding: 20px;
-  border-radius: 12px;
   background: var(--bg-color);
   transition: 0.3s transform;
-  transform: scale(0.5);
-  max-width: 60%;
+  @apply max-w-[60%] scale-50 rounded-xl p-5;
 }
 
 .opened {
-  opacity: 1;
   pointer-events: auto;
   z-index: var(--modal-z-index);
+  @apply opacity-100;
 
   .content {
-    transform: scale(1);
+    @apply scale-100;
   }
 }
 
 .isClosing {
   .content {
-    transform: scale(0.2);
+    @apply scale-[0.2];
   }
 }

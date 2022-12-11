@@ -16,5 +16,6 @@ export default (isDev: boolean) => ({
             },
         },
         'sass-loader',
+        'postcss-loader',
     ],
 });

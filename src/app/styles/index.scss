@@ -2,6 +2,9 @@
 @import "variables/global";
 @import "themes/normal";
 @import "themes/dark";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
     font: var(--font-m);
@@ -10,14 +13,13 @@ body {
 
 .app {
     background: var(--bg-color);
-    min-height: 100vh;
+    @apply min-h-screen;
 }
 
 .content__page {
-    display: flex;
+    @apply flex;
 }
 
 .page--wrapper {
-    flex-grow: 1;
-    padding: 20px;
+    @apply grow p-4;
 }
