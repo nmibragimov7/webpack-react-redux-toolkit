@@ -25,7 +25,13 @@ const Sidebar = ({ className }: SidebarProps) => {
                 [className],
             )}
         >
-            <Button data-testid="sidebar-toggle" theme={ThemeButton.OUTLINE} onClick={onToggle}>toggle</Button>
+            <Button
+                data-testid="sidebar-toggle"
+                theme={ThemeButton.OUTLINE}
+                onClick={onToggle}
+            >
+                toggle
+            </Button>
             <div className={styles.switchers}>
                 <ThemeSwitcher />
                 <LangSwitcher className={styles.lang} />
