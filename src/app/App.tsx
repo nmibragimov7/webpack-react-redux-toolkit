@@ -3,19 +3,18 @@ import React, { Suspense } from 'react';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
-import { useTheme } from 'app/providers/ThemeProvider';
+// import { useTheme } from 'app/providers/ThemeProvider';
 import { classNames } from 'shared/lib/classNames/classNames';
 
-const App = () => {
-    const { theme } = useTheme();
-    // useEffect(() => {
-    //     if (Math.random() < 0.5) {
-    //         throw new Error(); // выкидывает ошибку что проект сломался
-    //     }
-    // }, []);
-
-    return (
-        <div className={classNames('app', {}, [theme])}>
+const App = () =>
+// const { theme } = useTheme();
+// useEffect(() => {
+//     if (Math.random() < 0.5) {
+//         throw new Error(); // выкидывает ошибку что проект сломался
+//     }
+// }, []);
+    (
+        <div className={classNames('app', {}, [])}>
             <Suspense fallback="">
                 <Navbar />
                 <div className="content__page">
@@ -25,6 +24,4 @@ const App = () => {
             </Suspense>
         </div>
     );
-};
-
 export default App;

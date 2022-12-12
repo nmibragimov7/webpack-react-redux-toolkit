@@ -47,7 +47,7 @@ const Sidebar = ({ className }: SidebarProps) => {
             </div>
             <Button
                 data-testid="sidebar-toggle"
-                theme={ThemeButton.OUTLINE}
+                theme={ThemeButton.OUTLINE_INVERTED}
                 onClick={onToggle}
             >
                 toggle

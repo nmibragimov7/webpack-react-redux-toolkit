@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Counter } from 'entities/Counter';
+// import { Counter } from 'entities/Counter';
 
 function Main() {
     const { t } = useTranslation();
@@ -9,7 +9,7 @@ function Main() {
     return (
         <span>
             {t('title')}
-            <Counter />
+            {/* <Counter /> */}
         </span>
     );
 }

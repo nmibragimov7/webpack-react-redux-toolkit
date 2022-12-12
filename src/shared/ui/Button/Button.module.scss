@@ -20,3 +20,10 @@
     background: none;
     @apply py-2.5 px-4;
 }
+
+.outlineInverted {
+    border: 1px solid var(--inverted-primary-color);
+    color: var(--inverted-primary-color);
+    background: none;
+    @apply py-2.5 px-4;
+}

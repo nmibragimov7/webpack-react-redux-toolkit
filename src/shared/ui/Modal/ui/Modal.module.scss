@@ -1,10 +1,6 @@
 .Modal {
   @apply fixed top-0 right-0 bottom-0 left-0 opacity-0 pointer-events-none;
   color: var(--primary-color);
-  &.dark {
-    --bg-color: #090949;
-    --primary-color: #049604;
-  }
 }
 
 .overlay {
