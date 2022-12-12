@@ -69,6 +69,7 @@
     "postcss": "^8.4.19",
     "postcss-loader": "^7.0.2",
     "postcss-preset-env": "^7.8.3",
+    "react-redux": "^7.2.6",
     "reg-cli": "^0.17.7",
     "regenerator-runtime": "^0.13.9",
     "sass": "^1.49.9",
@@ -86,6 +87,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.0",
     "i18next": "^21.6.11",
     "i18next-browser-languagedetector": "^6.1.3",
     "i18next-http-backend": "^1.3.2",

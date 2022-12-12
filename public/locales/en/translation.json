@@ -4,5 +4,8 @@
   "test": "test",
   "not-found": "Page not found",
   "error-page": "An unexpected error has occurred",
-  "update-page": "Update page"
+  "update-page": "Update page",
+  "menu": ["Main page", "About"],
+  "increament": "Increament",
+  "decrement": "Decrement"
 }

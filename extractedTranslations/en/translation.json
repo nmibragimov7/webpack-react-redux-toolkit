@@ -1,9 +1,24 @@
 {
+  "about": {
+    "title": "title"
+  },
+  "decrement": "decrement",
   "error": "error",
   "error-page": "error-page",
+  "increament": "increament",
   "language": "English",
+  "menu": {
+    "0": "0",
+    "1": "1"
+  },
   "not-found": "not-found",
   "title": "Title",
+  "translation": {
+    "about": {
+      "title": "title"
+    },
+    "title": "title"
+  },
   "update-page": "update-page",
   "Войти": "Войти"
 }
