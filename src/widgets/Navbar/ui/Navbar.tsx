@@ -1,8 +1,9 @@
 import React, { useCallback, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { classNames } from 'shared/lib/classNames/classNames';
 import Button, { ThemeButton } from 'shared/ui/Button/Button';
-import { Modal } from 'shared/ui/Modal';
+import { LoginModal } from 'features/AuthByUsername';
 import styles from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -10,6 +11,7 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const onToggle = useCallback(() => {
         setIsOpen((prev) => !prev);
@@ -23,13 +25,9 @@ export const Navbar = ({ className }: NavbarProps) => {
                     theme={ThemeButton.CLEAR_INVERTED}
                     className={styles.mainLink}
                 >
-                    Войти
+                    {t('auth_by_username.button')}
                 </Button>
-                <Modal isOpen={isOpen} onClose={onToggle}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Adipisci cupiditate, dolorem eaque exercitationem laborum
-                    neque quaerat quibusdam quis reiciendis reprehenderit!
-                </Modal>
+                <LoginModal isOpen={isOpen} onClose={onToggle} />
             </div>
         </div>
     );

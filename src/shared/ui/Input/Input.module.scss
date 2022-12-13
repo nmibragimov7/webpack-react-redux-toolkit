@@ -1,0 +1,33 @@
+.Input {
+  @apply grid items-center gap-2;
+}
+
+.placeholder {
+  @apply mr-2;
+}
+
+.caretWrapper {
+  @apply grow relative;
+}
+
+.caret {
+  height: 2px;
+  width: 10px;
+  background: var(--primary-color);
+  animation: blink 0.7s forwards infinite;
+  @apply absolute bottom-4 right-0;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.01;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

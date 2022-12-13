@@ -1,0 +1,18 @@
+{
+  "auth_by_username": {
+    "button": "button",
+    "password": "password",
+    "username": "username"
+  },
+  "decrement": "decrement",
+  "error-page": "error-page",
+  "increament": "increament",
+  "language": "language",
+  "menu": {
+    "0": "0",
+    "1": "1"
+  },
+  "not-found": "not-found",
+  "title": "title",
+  "update-page": "update-page"
+}

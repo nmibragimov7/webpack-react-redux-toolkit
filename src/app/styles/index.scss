@@ -6,6 +6,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    input {
+        text-shadow: 0 0 0 var(--primary-color);
+        box-shadow: -4px -4px 8px #fff, 4px 4px 8px #d1dce3, inset -4px -4px 8px transparent, inset 4px 4px 8px transparent;
+        @apply rounded-lg bg-white-blue text-transparent h-full w-full leading-none p-4 outline-none border border-solid border-transparent;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
 body {
     font: var(--font-m);
     color: var(--primary-color);

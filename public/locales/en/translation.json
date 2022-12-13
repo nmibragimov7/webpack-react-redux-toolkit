@@ -7,5 +7,10 @@
   "update-page": "Update page",
   "menu": ["Main page", "About"],
   "increament": "Increament",
-  "decrement": "Decrement"
+  "decrement": "Decrement",
+  "auth_by_username": {
+    "username": "Username",
+    "password": "Password",
+    "button": "Sign in"
+  }
 }

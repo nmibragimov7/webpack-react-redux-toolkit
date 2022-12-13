@@ -6,5 +6,10 @@
   "update-page": "Обновить страницу",
   "menu": ["Главная страница", "О компании"],
   "increament": "Увеличить",
-  "decrement": "Уменьшить"
+  "decrement": "Уменьшить",
+  "auth_by_username": {
+    "username": "Логин",
+    "password": "Пароль",
+    "button": "Войти"
+  }
 }
